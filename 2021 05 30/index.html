@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+            var count = parseInt(prompt("주사위 굴릿 횟수 입력"));
+            var num = Math.random();
+            var dice= [0,0,0,0,0,0,0];
+            var dice_per= [0,0,0,0,0,0,0];
+            // new - 메모리 생성 연산자.
+            for (var i = 0; i <= count; i++) {
+                num = Math.ceil((Math.random()*6));
+                dice[num]++;                
+            }
+
+            for (var i = 1; i <= 6; i++) {
+                dice_per[i] = ((dice[i]/count) * 100);
+                document.write(i + "의 횟수:" + dice[i] + ", 확률:" + dice_per[i].toFixed(2) + "%" + "<br>");
+            }
+           
+        </script>
+    </head>
+</html>

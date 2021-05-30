@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+            var input1 = parseInt(prompt());
+            var input2 = parseInt(prompt())
+            
+            function ami (input1, input2) {
+                var tmp = 0;
+                var tmp2_1 = 0;
+                var tmp2_2 = 0;
+                for (var i = 1; i < input1; i++) {
+                    if (input1 % i == 0) {
+                        tmp = i;
+                        tmp2_1 += tmp;
+                    }                
+                }
+
+                for (var i = 1; i < input2; i++) {
+                    if (input2 % i == 0) {
+                        tmp = i;
+                        tmp2_2 += tmp;                               
+                    }                
+                }
+
+                if (tmp2_1 == input2 && tmp2_2 == input1) {
+                    return document.write(input1 + " 과(와) " + input2 + "는 " + "친화수가 맞습니다");
+                } else {
+                    return document.write(input1 + " 과(와) " + input2 + "는 " + "친화수가 아닙니다.");
+                }
+            }
+
+            ami(input1, input2);
+
+
+            
+
+            
+        </script>
+    </head>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script>
+            var input1 = parseInt(prompt());
+            var input2 = parseInt(prompt());
+            
+            
+            function mult (input1, input2) {
+                var tmp = input1;
+                var tmp2 = input1
+                var cnt = input2;                
+                for (var i = 1; i < input2; i++) {
+                tmp = tmp2 * input1;
+                input1 = tmp;                               
+                }
+                return tmp;
+            }
+            document.write(mult(input1, input2));
+            
+            
+
+            
+        
+            
+        </script>
+    </head>
+</html>
